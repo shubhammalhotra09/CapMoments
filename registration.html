@@ -1,0 +1,58 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+div {
+	width: 300px;
+	font-size:15px;
+	font: verdana;
+	font-weight: bold;
+	border: 3px solid gray;
+	margin-bottom: 700px;
+	margin-left : 750px;
+	margin-right: 300px;
+	margin-top: 40px;
+	padding: 10px;
+	color: gray;
+}
+h1 {
+	color: gray;
+	margin-top:180px;
+	margin-left:775px;
+	margin-bottom:500px:
+}
+div.Password {
+
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+<body>
+
+	<h1>CONTACT FORM</H1>
+	<div>
+		
+		
+		<form class="contact" action="form.php" method="post">
+			Name	 	:	<input type="text" name="NameText" value=""><br><br>
+			E-Mail		: 	<input type="text" name="emailaddresstext" value=""><br><br>
+			Phone	 	:	<input type="number" name="number" value="" ><br><br>
+			Username	:	<input type="text" name="usernametext" value="" ><br><br>
+			Password	:	<input type="password" name="passwordtext" value="" id="pass" ><br><br>
+							<br>
+							<br>
+							<input type="submit" value="login" name= "login">
+		</form>
+		
+	</div>

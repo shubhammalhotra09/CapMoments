@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<style>
+div {
+	width: 300px;
+	font-size:15px;
+	font: verdana;
+	font-weight: bold;
+	border: 3px solid gray;
+	padding: 10px;
+	color: blue;
+}
+
+
+
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+<body>
+
+	<h1>login</H1>
+	<div>
+		
+		
+			<form action="log.php" method ="POST">
+			Username	:	<input type="text" name="usernamey" value="" ><br><br>
+			Password	:	<input type="password" name="passwordy" value="" id="pass" ><br><br>
+							<br>
+							<br>
+						<input type="checkbox" name="termstext" value "terms" checked>remember me<br><br>
+						<input type="submit" value="login">
+						<a href ="contact form.html" name="singup">SIGN UP<BR>
+		</form>
+		
+	</div>
+	
+</body>
+</html>
